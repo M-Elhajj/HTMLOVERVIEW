@@ -1,0 +1,144 @@
+.section { 
+    background-color: lightgray;
+    vertical-align: top; 
+  }
+    
+  h3 { color: navy; }
+    
+  img { 
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;    
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);         
+  }
+    
+  body {
+    position: relative;
+    padding: 5px;
+  }
+  ul.nav-pills {
+    position: fixed;
+    font-size: 14px;
+  }
+ .nav>li>a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }  
+  div.col-sm-3 div {
+    height: 12px;
+  }
+   
+  .border {   
+    border-width: 3px;   
+    border-color: #F5F5F5;   
+    border-style: solid; 
+    border-radius: 8px;
+  } 
+
+  .subtitle {
+    background-color:SteelBlue; 
+    display:inline-block; 
+    padding:4px 20px 2px 20px; 
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .subtitle > tt {
+    background-color:SteelBlue; 
+    color: white;
+  }  
+  
+  
+  @media screen and (max-width: 810px) {
+    #section1, #section2, #section3, #section4, #section5,
+    #section6, #section7, #section8, #section9, #section10, 
+    #section11, #section12
+    {
+       margin-top: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 810px) { 
+    #fadeshow 
+    { 
+       display: none; 
+    }   
+  }
+  
+  @media only screen and (max-width: 810px) {
+    nav { display: none; }  
+    ul { margin-left: -2em; }    
+  }    
+  
+  .spaceafter {
+    margin-bottom: 20px;
+  }
+  .smallspace {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+  .bigspace {
+    margin-top: 16px;
+    margin-bottom: 4px;
+  }
+  .smallblankline {
+    padding-top:10px;
+    padding-bottom:2px;
+  }
+  
+  h3 { margin-top: 6px; }
+  
+  .topic { 
+    font-size: 160%;
+    font-weight: bold; 
+  }
+  
+  /* for card menu options -- worksheets */
+ .content { 
+    display: block;
+    width: 99%;
+    min-width: 440px;
+    text-align: left;
+    background: #cccccc;       
+ } 
+ .subcontent { 
+    display: block;
+    width: 99%;
+    min-width: 440px;
+    text-align: left;
+    background: #666666;    
+    color: white;   
+    /* margin-left: 10px; */
+ }
+ .exercise-worksheet { 
+    display: block;
+    width: 99%;
+    min-width: 440px;
+    text-align: left;
+    background: #eff8fb;       
+    color: navy;
+ } 
+ 
+  /* for collapsible things */ 
+  /* Icon when the collapsible content is shown */
+ .btn:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right;     
+ }   
+  /* Icon when the collapsible content is hidden */
+ .btn.collapsed:after {
+    font-family: 'FontAwesome';
+    content: "\f067"; 
+    float: right;
+ }
+  
+ .link-toggle { 
+   cursor: pointer; 
+ }
+ 
+ tt {
+   background: #ececec; /* Gainsboro; LavenderBlush; Linen; PapayaWhip; SeaShell; WhiteSmoke; */
+ }
+  

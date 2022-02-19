@@ -1,0 +1,430 @@
+/* For use in Web development course web site  */
+
+/* common styles used throughout the site */
+.offsite {
+   font-size:95%; 
+   font-style:italic; 
+   font-family:"comic sans ms";
+}
+
+.note {
+   font-size:95%; 
+   font-style:italic; 
+   font-family: "Lucida Sans Unicode";  /* "Times New Roman", Times, serif; /* "Lucida Sans Unicode";   "comic sans ms"; */
+}
+
+.container { 
+   width: 99%; /* text-align:justify; */ 
+}
+
+.center {
+   margin-left: auto;
+   margin-right: auto;
+   width: 90%;  
+   /* min-width: 460px; */
+   min-width: 412px;
+}
+
+hr { border-color: #999999; } 
+
+h1, h2, h3, h4 { font-weight: bold; }
+
+a:hover {
+   background: white;
+}
+
+.main {
+   padding: 0px 20px 0px 30px ;  
+}
+
+.mainpanel {
+   padding-top: 50px;
+}
+
+.isDisabled {
+   color: currentColor;
+   cursor: not-allowed;
+   text-decoration: none; 
+   background-image: linear-gradient(to bottom, #fafafa, #ccc);
+   opacity: 0.7;
+   pointer-events: none; 
+}
+
+.topNav {
+   text-decoration:none;
+}
+
+.specificname {
+   font-family: Times New Roman;
+   font-style: italic;
+}
+
+.quote {
+   padding: 10px 40px 30px 40px;
+   font-family: Times New Roman;
+}
+
+span.quote {
+   line-height: normal;  
+   color:#800000; 
+   font-size:90%; 
+   font-style:italic; 
+   display: inline-block;
+   padding: 5px 0px 2px 0px;
+}
+
+.paper ul > li {  
+   padding-top: 0.8em;  
+   padding-left: 0.3em;  
+} 
+
+.nobullet ul > li {
+   list-style-type: none;
+   padding-left: 0.3em;
+}
+
+.steps ol > li, .steps ul > li {  
+   padding-top: 0.6em;  
+   padding-bottom: 0.5em;
+   padding-left: 0.5em;   
+} 
+
+.innersteps ul > li {
+   padding-top: 0.6em;
+   line-height: 1.4em;     
+   padding-bottom: 0em; 	
+}
+
+.smallsteps ul > li {
+   padding-top: 0.4em;
+   line-height: 1.2em;
+   padding-bottom: 0em;
+}
+
+.smallspace {
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+  
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#content, #sidebar {
+   padding: 10px 10px 10px 0px;
+}
+
+input[type="submit"]
+{
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 1px 2px #666666;
+  -moz-box-shadow: 0px 1px 2px #666666;
+  box-shadow: 0px 1px 2px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  border: solid #f2f7fa 1px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+body {
+   color: #06234d;  /* #084B8A; #000066; #000033; #003399; #084B8A; */           
+   font-family: Helvetica; 
+   font-size: 16px;
+   margin: 0;              
+}
+
+.btn-primary {
+   color: #cccccc;  
+   background-color: #cccccc;
+   border-color: #cccccc;
+   color: #333333;
+   margin-bottom: 5px;
+}
+   
+.btn-primary:hover {   
+   color: #ffffff; 
+   background-color: #999999;
+   border-color: white;	
+}
+
+.big-img {
+   min-width: 380px;
+}
+.assess-img {
+   min-width: 300px;
+}
+img { border-radius: 4px; }
+
+.subsection {       
+   border: 0.125ex solid #336699; /* #999999; */ 
+   border-radius: 0.5ex; 
+   padding: 10px 20px 10px 20px;
+}
+
+.sidebar {    
+   background: #eff8fb;   
+   border: 0.125ex solid #e3e3e3; 
+   min-height: 1px;
+   min-width: 180px; 
+   border-radius: 0.5ex; 
+   box-shadow: inset 0 0.0625ex 0.125ex rgba(0,0,0,0.25);    
+}
+
+.sidebar ul { 
+   padding: 8px; 
+   margin: 8px; 
+   list-style: none; 
+}
+
+.sidebar ul > li > a { 
+   display:block; 
+   text-indent: -2em; 
+   padding-left: 2em; 
+   padding-top: 0.3em; 
+   padding-bottom: 0.3em; 
+   line-height: 125%;  
+} 
+
+.sidebar ul > li > a:hover, .sidebar ul > li > a:focus { 
+   background-color: #dddddd; 
+   text-decoration: none;    
+}
+
+/* for top menu (nav.html) */ 
+.navbar { 
+   margin-bottom: 0; 
+}
+
+.navbar-header .navbar-brand {
+   color: black;
+   text-shadow: 0px 1px 0px #ffffff; 
+   font-size: 22px;
+   font-weight: bold; 
+}  
+ 
+.navbar-inverse {
+   border-bottom: 1px solid #cccccc;
+   background-color: #ccc; 
+   color: #222;
+   background-image: -webkit-gradient(linear, left top, left bottom, 
+                                       from(#ccc), to(#bbb)); 
+   box-shadow: 0 0.0625ex 0.5ex rgba(0,0,0,.1); 
+   background-image: linear-gradient(to bottom, #fafafa, #ccc);    
+   opacity: 0.9; 
+}
+
+.navbar-inverse .navbar-nav li a {
+   color: #336699; 
+   font-size: 14px;   
+} 
+
+.navbar-right a:hover {
+   text-decoration: none; 	
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+   background: #666666;
+   color: #ffffff;      
+}
+
+.navbar .navbar-header a:hover {
+   color: #333333;	
+}
+
+.navbar .navbar-header a:visited {
+   color: black;	
+}
+
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+   background: #cccccc;	
+} 
+
+/* for schedule page */
+.noclass { 
+   background-color: #f4f4f4; /* #ebe9ed; */
+   color: gray; 
+}
+
+.inset-text { 
+   opacity: 0.7;
+   /* color: #333333; */
+   /* text-shadow: 1px 1px 2px; */ 
+}
+
+table {
+   border-collapse: collapse;
+   table-layout: auto;
+   border-spacing: 5px;
+   line-height: 1.4em;
+   border-color: #999999;
+} 
+
+th, td {
+   text-align: left;
+   padding: 10px;
+   border-collapse: separate;
+   border-spacing: 5px;
+   border: 0.125ex solid #bdbdbd;
+}
+
+.common tr:nth-child(even) {
+   background-color: #ededed;
+}
+
+.common td {
+   padding: 4px 5px 4px 20px;
+   border-style: none;
+}
+ 
+.section {
+   background-color: #dfdce3; 
+} 
+
+.dueday {
+   background-color: #fffde2;
+}
+
+.examday {
+   background-color: LavenderBlush;   /* #FFF0F5 */
+}
+.inclassday {
+   background-color: #effaff;
+}
+ 
+.oddrow {
+   background-color: #faffff;	
+} 
+
+.evenrow {
+   background-color: #fefeff;	
+} 
+
+.tuesday {
+   background-color: #eff8fb;
+}
+
+.wednesday {
+   background-color: #e8f6fd; 
+}
+
+.thursday {
+   background-color: WhiteSmoke; /* HoneyDew; */ /* #d7fcea; */  
+}
+
+.friday {
+   background-color: #f4f6f6;
+}
+
+.final {
+   background-color: lightyellow;	
+}
+
+.emphasize {
+   font-size: 1.3em;
+   font-weight: bold;
+} 
+
+.pagebreak { page-break-before: always; }
+
+.line-strikethrough {
+   display: inline;
+   background-image: linear-gradient(transparent 0.8ex, red 0.5ex, red 1ex, transparent 1.5ex);
+}   
+
+.decorated-text { 
+   font-style:italic;  
+   font-family:"Georgia";
+}
+ 
+.exercise {  
+   background-color: #eff8fb; /* LavenderBlush; */ 
+   border: 0.125ex solid #e3e3e3; 
+   border-radius: 0.5ex; 
+   /* box-shadow: inset 0 0.0625ex 0.125ex rgba(0,0,0,0.25); */
+   padding: 6px 10px 4px 10px;   
+}
+  
+.day { 
+   border-top: 2px solid #afafaf;	
+} 
+
+.highlight {
+   padding: 3px 5px 3px 5px; 
+   background-color: yellow;
+   border-radius: 0.5ex;
+}
+ 
+@media only screen and (max-width: 768px) {    /* phones: 576px, tablets: 768px, desktops: 992px, large desktops 1200px */
+  .center {
+     width: 90%;
+     /* display: inline-block; */
+  } 
+  .custom-table {
+    font-size: 85%;
+    margin-left: -2px;
+  }
+  h2 {
+    font-size: 1.8em; 
+  }
+} 
+
+
+
+.solution { 
+   border-radius: 10px;
+   border: 2px solid silver;
+   padding: 10px 20px 10px 20px;      
+   margin: 10px 10px 10px 10px;
+   background-color: white;
+}
+.content { 
+   display: block;
+   width: 99%;
+   min-width: 440px;
+   text-align: left;
+   background: #cccccc;       
+}
+/* for collapsible things */ 
+/* Icon when the collapsible content is shown */
+.btn-o:after {
+   font-family: 'FontAwesome';  
+   content: "\f068";
+   float: right;     
+}   
+/* Icon when the collapsible content is hidden */
+.btn-o.collapsed:after {
+   font-family: 'FontAwesome';
+   content: "\f067"; 
+   float: right;
+}      
+.collapse { 
+   width: 99%;	
+}         
+ 

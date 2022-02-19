@@ -1,0 +1,13 @@
+<fieldset>
+  <legend>
+    Contact Information
+  </legend>
+  <form action="mailto:someone@virginia.edu" method="post" enctype="text/plain">
+    <label for="name" width="40px">Name: </label>
+    <input type="text" name="theName"> <br/>
+    <label for="email" width="40px">Email: </label>
+    <input type="email" name="EMail"> <br/>
+    <label for="phone" width="40px">Phone: </label> 
+    <input type="text" name="Phone" maxlength="12" size="12"> 
+  </form>
+</fieldset>

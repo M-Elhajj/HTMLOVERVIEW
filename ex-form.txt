@@ -1,0 +1,6 @@
+<form action="login.jsp" method="post">
+  Username: <input type="text" name="username" required />
+  Password: <input type="text" name="pwd" required />
+  <button type="submit" value="Submit" title="This button won't work. No implementation has been done."> Login</button>
+  <button type="reset" value="Reset" title="This button also won't work.">Reset</button>
+</form> 

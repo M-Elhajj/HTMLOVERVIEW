@@ -1,0 +1,10 @@
+To deploy and test servlet 
+<ol>
+  <li>Compile your Java servlet</li>
+  <li>Put a Java class under  /webapps/context-name/WEB-INF/classes/package-name/</li>
+  <li>Put jar files under  /webapps/context-name/WEB-INF/lib/ (if applicable)</li>
+  <li>Put data files under /webapps/context-name/WEB-INF/data/package-name/  </li>
+  <li>Set permission for all files and directories under /webapps/context-name/WEB-INF/classes/package-name/
+      using chmod 644 </li>
+  <li>Access your servlet via http://localhost:8080/context-name/package-name.servletname</li> 
+</ol>

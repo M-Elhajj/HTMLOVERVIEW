@@ -1,0 +1,10 @@
+Commonly used HTML tags 
+<ul>
+  <li>input tags</li>
+  <li>form tags</li>
+  <li>button tags</li>
+  <li>a tags</li>
+  <li>img tags</li>
+  <li>table tags</li>
+  <li> .....</li>  
+</ul>

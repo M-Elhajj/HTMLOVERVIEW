@@ -1,0 +1,14 @@
+<!doctype html>  
+  <html>  
+    <head> 
+      <meta charset="UTF-8">  
+      <title>HTML — overview</title>  
+      <!-- this is a comment: browser does not 
+           render the head element -->
+    </head>
+    <body>
+      content .....
+      <!-- this is a comment: browser renders 
+           the content of the body element --> 
+    </body>
+  </html>

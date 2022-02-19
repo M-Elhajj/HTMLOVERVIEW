@@ -1,0 +1,8 @@
+<dl>
+  <dt>term (<code><dt></code> defines a term/name)</dt>
+  <dd>definition1 (<code><dd></code> describes a term/name)</dd>
+  <dd>definition2</dd>
+  <dt>term1</dt>
+  <dt>term2</dt>
+  <dd>definition</dd>
+</dl> 

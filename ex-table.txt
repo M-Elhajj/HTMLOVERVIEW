@@ -1,0 +1,14 @@
+<table border="1" width="60%">
+  <tr>     
+    <th>Assignments</th>     
+    <th>Scores</th>
+  </tr>
+  <tr>
+    <td align="center">Assignment 1</td>     
+    <td align="right">20</td>
+  </tr>
+  <tr>
+    <td align="center">Assignment 2</td>
+    <td align="right">20</td>
+  </tr>
+</table> 

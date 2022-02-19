@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HTML overview</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="MElhajj">
+  <meta name="description" content="CS4640-WebPL">
+  <meta name="keywords" content="CS 4640, Upsorn, Praphamontripong, Programming Languages for Web Applications, usability, web application, how to build web app, how to improve usability, how to design web app, how to design user interface, how to write java servlet, how to write jsp">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main-style.css">  
+  <link rel="stylesheet" href="supplement-style.css">
+  
+  <style>
+  div.col-sm-3 div {
+    height: 10px;
+  }
+  div.col-sm-9 div {
+    font-size: 14px;
+  }
+    
+  dd {
+    padding: 0; margin: 0 0 0 2em;
+  }
+  
+  fieldset {
+    padding: 5px 25px 10px 25px;
+    width: 380px;  
+  }    
+  </style>
+  
+</head>
+
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">          
+        <ul class="nav nav-pills nav-stacked">
+        <h3><a href="overview-html.php">HTML <br />Overview</a></h3>
+          <li class="active"><a href="#section1">What is HTML?</a></li>
+          <li><a href="#section2">Basic structure</a></li>
+          <li><a href="#section3">Some HTML tags</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">List<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#section41">Definition list</a></li>
+              <li><a href="#section42">Ordered list</a></li>
+              <li><a href="#section43">Unordered list</a></li>
+            </ul>
+          </li>                          
+          <li><a href="#section5">Link</a></li>   
+          <li><a href="#section6">Image</a></li>
+          <li><a href="#section7">Table</a></li>      
+          <li><a href="#section8">Form</a></li>
+          <li><a href="#section9">Text field</a></li>      
+          <li><a href="#section10">Textarea</a></li>
+          <li><a href="#section11">Hidden input</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Selection<span class="caret"></span></a>
+            <ul class="dropdown-menu">             
+              <li><a href="#section121">Checkbox</a></li>
+              <li><a href="#section122">Drop down</a></li>
+              <li><a href="#section123">Radio button</a></li>
+            </ul>
+          </li>             
+          <li><a href="#section13">Fieldset</a></li>         
+          <li><a href="#section14">Button</a></li> 
+          <li><a href="#section15">File</a></li>
+          <li><a href="#section16">Client-side redirect</a></li>
+                                                         
+        </ul>        
+      </nav>
+
+      <div class="col-sm-9">
+        <h1 style="color:navy">HTML Overview</h1>
+        <div id="fadeshow">
+        <i>This is a short introduction to writing HTML. 
+        You should review the page source, 
+        particularly focusing on how this HTML page is written 
+        and how it is rendered on the screen.
+        For more information, please refer to 
+        "Programming the World Wide Web" by Robert W. Sebesta book 
+        and <a href="http://www.w3schools.com/" class="offsite" target="_blank" title="http://www.w3schools.com/">W3 Web Schools</a>        
+        </i>
+        <br/>
+        <font size=-1 style="font-style:italic; color:green">
+        (Please tell me if you find any errors or omissions in the document &mdash;Upsorn Praphamontripong, 30-January-2021)
+        </font>
+        </div>       
+      <div id="section1">          
+        <h3 class="subtitle">What is HTML?</h3>
+        <table class="table table-striped">
+          <tr>
+            <td>
+              It is a special kind of text document 
+              that is used by Web browsers to present text and graphics. 
+              HTML documents are often referred to as "Web pages".
+              <br /> <br />
+       
+              <b>Element</b>: container and content; a piece of a documents, including sentence, paragraph, list, table, head, body, ...   
+              <br /><br />
+              <b>Tag</b>: container (thus requires an opening tag and a closing tag), a command to control the format, not case sensitive <br />
+              <br/>
+              <u>Example:</u> <code>&lt;p&gt; content &lt;/p&gt; </code> <br />        
+                where <code>&lt;p&gt;</code> is an opening tag defining a paragraph and 
+                <code>&lt;/p&gt;</code> is a closing tag.  <br />                  
+              <br/>
+              <b>Attribute</b>: option or parameter to a tag
+              <br /><br />
+              <b>Rendering</b>: a browser formats the text to display on the screen
+              according to the formatting rules
+               
+              <p>
+              This page will introduce you to :
+              <ul>
+                <li>basic structure of HTML</li> 
+                <li>some basic HTML tags</li>
+              </ul>
+              <p>
+              Note: if the web browser does not recognize any specific tags, formats, or settings, 
+              the browser will render the content based on its default styles.
+            </td>
+          </tr>
+        </table>
+      </div>     
+      
+      <!-- ############################# -->
+         
+      <div id="section2">    
+        <h3 class="subtitle">Basic structure of HTML</h3>
+        <table class="table table-striped">
+          <tr>
+            <td>
+              <object data="html-structure.txt" type="text/plain" width="99%" style="height: 200px" border=1>
+              </object>           
+            </td>
+          </tr>
+        </table>
+      </div>  
+      
+      <!-- ############################# -->
+      
+      <div id="section3">    
+        <h3 class="subtitle">Some HTML tags</h3>
+        <table class="table table-striped">
+          <tr><td>
+      <ul>
+        <li>headers &mdash; <code>
+                            &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;
+                            &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;
+                            </code>
+        </li>
+        <li>breaks &mdash; <code>
+                          &lt;br /&gt;, &lt;hr />, &lt;p&gt;
+                          </code>
+        </li>
+        <li>fonts &mdash; <code>
+                          &lt;b&gt;, &lt;em&gt;, &lt;i&gt;, &lt;u&gt;, &lt;strong&gt;,  
+                          &lt;code&gt;, &lt;font size="-1"&gt; 
+                          </code> 
+                          <br /> note: <code>&lt;font&gt;</code> is deprecated but still widely used
+        </li>
+        <li>lists &mdash; <code> 
+                          &lt;ul&gt;&lt;li&gt;, &lt;ol&gt;&lt;li&gt;, 
+                          &lt;dl&gt;&lt;dt&gt;...&lt;dd&gt;...
+                          </code>
+        </li>
+        <li>colors &mdash; <code>
+                           &lt;font color="#RRGGBB"...
+                           </code>
+                           <br />
+             <a href="http://www.w3schools.com/colors/colors_names.asp" class="offsite">color names</a>: "green" "blue" "red" ...
+                           <br />            
+        </li>
+        <li>          
+          Special chars &mdash; 
+                          <code>&amp;lt; (&lt;), &amp;gt; (&gt;), 
+                          &amp;amp; (&amp;), &amp;nbsp; (blank space)
+                          </code> 
+        </li>
+      </ul>           
+          </td></tr>
+        </table>
+      </div>  
+      
+      <!-- ############################# -->
+            
+      <div id="section4">    
+        <h3 class="subtitle">List</h3>             
+        <div id="section41">
+          <table class="table table-striped">
+          <tr><td>
+          <h4 style="background-color:lavender; display:inline-block; padding:2px 10px 2px 10px">Definition list</h4>
+          <br/>
+          <object data="ex-definition-list.txt" type="text/plain" width="99%" style="height: 120px" border=1>
+		  
+          </object> 
+          <br/><br/>
+          What does this look like?
+          <br/>
+          <blockquote><font size="-1">
+            <dl>
+              <dt>term (<code>&lt;dt&gt;</code> defines a term/name)</dt>
+              <dd>definition1 (<code>&lt;dd&gt;</code> describes a term/name)</dd>
+              <dd>definition2</dd>            
+              <dt>term1</dt>
+              <dt>term2</dt>
+              <dd>definition</dd>
+           </dl>
+          </font></blockquote>
+          </td></tr></table>
+        </div>
+                                  
+        <div id="section42"> 
+          <table class="table table-striped">
+          <tr><td>           
+          <h4 style="background-color:lavender; display:inline-block; padding:2px 10px 2px 10px">Ordered list</h4>
+          <br/>
+          <object data="ex-ordered-list.txt" type="text/plain" width="99%" style="height: 150px" border=1>
+          </object>
+          <br/><br/>
+          What does this look like?
+          <br/>
+          <blockquote><font size="-1">
+            To deploy and test servlet 
+            <ol>
+              <li>Compile your Java servlet</li>
+              <li>Put a Java class under  /webapps/context-name/WEB-INF/classes/package-name/</li>
+              <li>Put jar files under  /webapps/context-name/WEB-INF/lib/ (if applicable)</li>
+              <li>Put data files under /webapps/context-name/WEB-INF/data/package-name/  </li>
+              <li>Set permission for all files and directories under /webapps/context-name/WEB-INF/classes/package-name/
+                 using chmod 644 </li>
+              <li>Access your servlet via http://localhost:8080/context-name/package-name.servletname</li> 
+            </ol>
+          </font></blockquote>
+          </td></tr></table>
+        </div>              
+                             
+        <div id="section43">
+          <table class="table table-striped">
+          <tr><td>          
+          <h4 style="background-color:lavender; display:inline-block; padding:2px 10px 2px 10px">Unordered list</h4>
+          <br/>
+          <object data="ex-unordered-list.txt" type="text/plain" width="99%" style="height: 150px" border=1>
+          </object>
+          <br/><br/>
+          What does this look like?
+          <br/>
+          <blockquote><font size="-1">
+            Commonly used HTML tags 
+            <ul>
+              <li>input tags</li>
+              <li>form tags</li>
+              <li>button tags</li>
+              <li>a tags</li>
+              <li>img tags</li>
+              <li>table tags</li>
+              <li> .....</li>                        
+            </ul>
+          </font></blockquote>              
+          </td></tr></table>
+        </div>               
+      </div>
+                   
+      <div id="section5">
+        <h3 class="subtitle">Link</h3>     
+        <table class="table table-striped">            
+        <tr><td>          
+        <a href="http://www.test.com" target="_blank">class website</a>
+        <br/>
+        <ul>
+          <li>
+            <code>&lt;a href="http://www.test.com" target="_blank"&gt;</code> &mdash; <code>target="_blank"</code> open a new window or tab
+          </li>
+          <li>
+            <code>&lt;a href="#example"&gt;</code> &mdash; within the current file
+          </li>
+          <li>
+            <code>&lt;a href="mailto:someone@someone.edu.lb" target="_blank"&gt;</code>
+            <br />
+            Note: Spaces in an email subject should be encoded (replaced by <code>%20</code>) to ensure that the browser will display the text properly.
+            <br />
+            &nbsp;&nbsp;<a href="mailto:someone@someone.edu.lb" target="_blank">contact us</a> 
+          </li>
+        </ul> 
+        <p>
+        <b>An absolute link:</b> completes URL (e.g., <code>href="http://www.usal.edu.lb"</code>) 
+        <ul>
+          <li>Absolute links are used when linking to a location on another website, 
+              i.e., require a full path.</li>              
+          </ul>
+        
+          <b>A relative link:</b> points to a file or a file path (e.g., <code>href="schedule.html"</code>)
+          <ul>
+            <li>Relative links are used when linking to pages or files within a website.</li>
+            <li>Browsers look for the location of the file relative to the screen/page where the link appears.</li>
+            <li>Relative links require less typing, thus less mistakes.</li>
+            <li>When a browser sees <code>/</code> (e.g., <code>/assigns/h1-eval.html</code>),
+                it looks in the current folder for a subfolder (<code>assigns</code>) 
+                that contains the specified file (<code>h1-eval.html</code>)</li>
+            <li>When a browser sees <code>../</code> in front of the filename, 
+                it looks in the folder above the current folder. </li>                 
+          </ul>            
+        </td></tr></table>
+      </div>
+          
+                    
+      <div id="section6">
+        <h3 class="subtitle">Image</h3>
+        <table class="table table-striped">            
+        <tr><td>              
+        Defines an image 
+        <br /><br />
+        <code>&lt;img src="../images/giphy.gif" alt="Happy face" height="50%" width="70%"&gt;</code><br />
+        <img src="https://media.giphy.com/media/l2olcETxXQjImhNcm2/giphy.gif" alt="Happy face" height="40%" width="50%">
+        <br /><br />
+        <code>&lt;img src="../images/giphy.gif" alt="Happy face" height="220px" width="380px"&gt;</code><br />
+        <img src="https://media.giphy.com/media/l2olcETxXQjImhNcm2/giphy.gif" alt="Happy face" height="190" width="320">
+        <br /><br />
+        Always use an <code>alt</code> attribute to describe the image. 
+        This increases usability -- searchable, and especially when the image cannot be loaded. 
+        <br/><br/>
+        Note: try resizing the screen, observe the difference between absolute vs relative height and width
+        <br/><br/>[Ref: Image from <a href="https://giphy.com" class="offsite" target="_blank">https://giphy.com</a>]            
+        </td></tr></table>
+      </div>
+           
+          
+      <div id="section7">
+        <h3 class="subtitle">Table</h3>
+        <table class="table table-striped">            
+        <tr><td>  
+          <object data="ex-table.txt" type="text/plain" width="99%" style="height: 200px" border=1>
+          </object>                   
+        <br /><br/>
+        What does this look like?
+        <blockquote><font size="-1">
+          <table border="1"  width="60%">
+            <tr>
+              <th>Assignments</th>
+              <th>Scores</th>
+            </tr>
+            <tr>
+              <td align="center">Assignment 1</td>
+              <td align="right">20</td>
+            </tr>
+            <tr>
+              <td align="center">Assignment 2</td>
+              <td align="right">20</td>
+            </tr>            
+          </table>             
+        </font></blockquote>
+        </td></tr></table>
+      </div>
+          
+          
+      <div id="section8">
+        <h3 class="subtitle">Form</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+          <object data="ex-form.txt" type="text/plain" width="99%" style="height: 110px" border=1>
+          </object>           
+          <br/><br/>
+          What does this look like?
+          <blockquote><font size="-1">
+            <form action="login.jsp" method="post">  
+               Username: <input type="text" name="username" required /><br />  
+               Password: &nbsp;<input type="text" name="pwd" required /><br /><br /> 
+               <button type="submit" value="Submit" title="This button won't work. No implementation has been done.">Login</button> 
+               <button type="reset" value="Reset" title="This button also won't work.">Reset</button>  
+            </form>            
+          </font></blockquote> 
+          Note: notice text upon hovering (Login and Reset buttons)       
+          <br/>            
+          Try <code>autofocus</code> attribute of an <code>&lt;input&gt;</code> element, 
+          observe where the cursor is placed
+        </td></tr></table>            
+      </div>
+
+
+      <div id="section9">
+        <h3 class="subtitle">Text field</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+          <code>Username: &lt;input type="text" name="username" /&gt;</code>
+          <br /><br />
+          What does this look like?
+          <blockquote><font size="-1">
+            Username: <input type="text" name="username" />
+          </font></blockquote>
+        </td></tr></table>            
+      </div>
+
+
+      <div id="section10">
+        <h3 class="subtitle">Textarea</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+          <code>
+             &lt;textarea rows="8" cols="60"&gt; <br/>
+               &nbsp;&nbsp;Homeworks must be submitted before class ... <br />  
+             &lt;/textarea&gt; 
+          </code>
+          <br />
+          <blockquote><font size="-1">
+          <textarea rows="8" cols="60">
+Homeworks must be submitted before class on the day they are due. Assignments will be checked 
+immediately after the due date; if you finish an assignment late, you must inform the TA and me by email when it is ready to be graded. 
+Changing an assignment after the due date without prior permission will be treated as a late submission. 
+          </textarea>
+          </font></blockquote>
+          
+          Use a <code>disabled</code> attribute 
+          <br />
+          <code>
+             &lt;textarea rows="8" cols="60" disabled&gt; <br/>
+               &nbsp;&nbsp;Homeworks must be submitted before class ... <br />  
+             &lt;/textarea&gt; 
+          </code>  
+          <br />
+          <blockquote><font size="-1">      
+          <textarea rows="8" cols="60" disabled>
+Homeworks must be submitted before class on the day they are due. Assignments will be checked 
+immediately after the due date; if you finish an assignment late, you must inform the TA and me by email when it is ready to be graded. 
+Changing an assignment after the due date without prior permission will be treated as a late submission. 
+          </textarea>
+          </font></blockquote>
+          
+          Use a <code>readonly</code> attribute 
+          <br />
+          <code>
+             &lt;textarea rows="8" cols="60" readonly&gt; <br/>
+               &nbsp;&nbsp;Homeworks must be submitted before class ... <br />  
+             &lt;/textarea&gt; 
+          </code>  
+          <br />
+          <blockquote><font size="-1">                  
+          <textarea rows="8" cols="60" readonly>
+Homeworks must be submitted before class on the day they are due. Assignments will be checked 
+immediately after the due date; if you finish an assignment late, you must inform the TA and me by email when it is ready to be graded. 
+Changing an assignment after the due date without prior permission will be treated as a late submission. 
+          </textarea>
+          </font></blockquote>
+
+        </td></tr></table>            
+      </div>
+
+
+      <div id="section11">
+        <h3 class="subtitle">Hidden input</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+          Not rendered on the screen <br />
+          Can be used to maintain state of web applications <br /><br />
+          <code>&lt;input type="hidden" name="login_attempt" value="0"&gt; </code>
+        </td></tr></table>            
+      </div>
+      
+
+      <div id="section12">    
+        <h3 class="subtitle">Selection</h3>             
+        <div id="section121">
+          <table class="table table-striped">
+          <tr><td>
+          <h4 style="background-color:lavender; display:inline-block; padding:2px 10px 2px 10px">Checkbox</h4>
+          <br/>
+          <code>
+             &lt;input type="checkbox" name="vehicle" value="Car"&gt; I have a car  <br />
+             &lt;input type="checkbox" name="vehicle" value="Bike" checked&gt; I have a bike          
+          </code>
+          <br /><br/>
+          What does this look like?
+          <blockquote><font size="-1">
+            <input type="checkbox" name="vehicle" value="Car" > I have a car<br>
+            <input type="checkbox" name="vehicle" value="Bike" checked> I have a bike<br>
+          </font></blockquote>
+          </td></tr></table>
+        </div>
+        
+        <div id="section122"> 
+          <table class="table table-striped">
+          <tr><td>           
+          <h4 style="background-color:lavender; display:inline-block; padding:2px 10px 2px 10px">Drop down</h4>
+          <br/>
+          <code>
+             Select your favorite car: <br />        
+             &lt;select name="cars"&gt; <br />
+               &nbsp;&nbsp;&lt;option value="volvo"&gt;Volvo&lt;/option&gt;  <br />
+               &nbsp;&nbsp;&lt;option value="saab"&gt;Saab&lt;/option&gt;  <br />
+               &nbsp;&nbsp;&lt;option value="ford" selected&gt;Ford&lt;/option&gt;  <br />
+               &nbsp;&nbsp;&lt;option value="audi"&gt;Audi&lt;/option&gt;  <br />
+             &lt;/select&gt;             
+          </code>
+          <br /><br />
+          What does this look like?
+          <blockquote><font size="-1">
+            Select your favorite car:        
+            <select name="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="opel" selected>Ford</option>
+              <option value="audi">Audi</option>
+            </select>           
+          </font></blockquote>
+          </td></tr></table>
+        </div>
+        
+        <div id="section123"> 
+          <table class="table table-striped">
+          <tr><td>           
+          <h4 style="background-color:lavender; display:inline-block; padding:2px 10px 2px 10px">Radio button</h4>
+          <br/>
+          <code>
+            Select your major: <br />
+              &nbsp;&nbsp;&lt;input type="radio" name="major" value="CS" checked&gt; CS <br />
+              &nbsp;&nbsp;&lt;input type="radio" name="major" value="SWE"&gt; SWE <br />
+              &nbsp;&nbsp;&lt;input type="radio" name="major" value="ACS"&gt; ACS<br />
+              &nbsp;&nbsp;&lt;input type="radio" name="major" value="ECE"&gt; ECE            
+          </code>
+          <br /><br />
+          What does this look like?
+          <blockquote><font size="-1">
+             Select your major: <br />
+                <input type="radio" name="major" value="CS" checked> CS <br />
+                <input type="radio" name="major" value="SWE"> SWE <br />
+                <input type="radio" name="major" value="ACS"> ACS<br />
+                <input type="radio" name="major" value="ECE"> ECE            
+          </font></blockquote> 
+          Note: name values must be the same 
+          </td></tr></table>
+        </div>        
+        
+      </div>
+      
+
+      <div id="section13">
+        <h3 class="subtitle">Fieldset</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+        <object data="ex-fieldset1.txt" type="text/plain" width="99%" style="height: 250px" border=1>
+        </object>           
+        <br/><br/>
+        What does this look like?
+        <blockquote><font size="-1">
+          <fieldset name="userinfo" >
+            <legend><b>User information</b></legend>
+            <table>
+              <tr bgcolor="orange">
+                <td><label for="name">Name: </label></td>
+                <td><input type="text" name="name" id="name" size="40">
+              </tr>
+              <tr>
+                <td><label for="addr">Address: </label></td>
+                <td><input type="text" name="addr" id="addr" size="40">
+              </tr>
+              <tr>
+                <td><label for="phone">Phone: </label></td>
+                <td><input type="text" name="phone" id="phone" size="40">
+              </tr>      
+            </table>
+          </fieldset> 
+        </font></blockquote>
+
+        <object data="ex-fieldset2.txt" type="text/plain" width="99%" style="height: 200px" border=1>
+        </object>           
+        <br/><br/>
+        What does this look like?
+        <blockquote><font size="-1">
+          <fieldset>
+            <legend><b>Contact Information</b></legend>
+            <form action="mailto:someone@someone.edu.lb" method="post" enctype="text/plain">
+              <label for="name" width="40px">Name: </label>
+              <input type="text" name="theName"> <br/>
+              <label for="email" width="40px">Email: </label>
+              <input type="email" name="EMail"> <br/>
+              <label for="phone" width="40px">Phone: </label> 
+              <input type="text" name="Phone" maxlength="12" size="12"> 
+            </form>
+          </fieldset>
+        </font></blockquote>                
+        </td></tr></table>            
+      </div>
+      
+
+      <div id="section14">
+        <h3 class="subtitle">Button</h3>
+        <table class="table table-striped">            
+        <tr><td>
+          <b>button tag</b><br/>
+          <ul>
+            <li><code>&lt;button&gt;</code> or <code>&lt;button type="button"&gt;</code></li>
+            <li>Defines a clickable button</li>    
+            <li>Allows content between opening and closing tags</li>              
+            <li>Usually used for an action (activate a JavaScript)</li>
+            <li>Supports three types of buttons: 
+                <code>button</code>, <code>reset</code>, and <code>submit</code></li>
+            <li>Supports a <code>disabled</code> attribute</li>
+            <li>Note: Always specify the type attribute for a &lt;button&gt; tag. 
+                Different browsers use different default types for the &lt;button&gt; tag. 
+          </ul>
+          
+          <code>
+          &lt;button type="button" onclick="alert('I said, Don\'t click me!')">Don't click Me!&lt;/button&gt;
+          </code>
+          <br/>
+          What does this look like?
+          <blockquote><font size="-1">
+            <button type="button" onclick="alert('I said, Don\'t click me!')">Don't click Me!</button>
+          </font></blockquote>
+           
+          <br/> 
+          <b>input tag with button type</b><br/>
+          <ul>
+            <li><code>&lt;input type="button" ... /&gt;</code></li>
+            <li>Defines a clickable button</li>
+            <li>Does not allow content. 
+                That is, the button label is specified via
+                a <code>value</code> attribute</li>
+            <li>Usually used for an action (activate a JavaScript)</li>
+            <li>Does not perform reset or submit operations. 
+                Note: the <code>type</code> attribute of an <code>input</code> tag 
+                can be set to <code>reset</code> or <code>submit</code>
+                to perform reset or submit operations.</li>   
+            <li>Supports a <code>disabled</code> attribute</li>
+          </ul>
+          
+          <code>
+            &lt;input type="button" onclick="alert('I said, Don\'t click me!')" value="Don't click Me!" /&gt;
+          </code>
+          <br />
+          What does this look like?
+          <blockquote><font size="-1">
+            <input type="button" onclick="alert('I said, Don\'t click me!')" value="Don't click Me!" />
+          </font></blockquote>
+        </td></tr></table>            
+      </div>
+      
+      
+      <div id="section15">
+        <h3 class="subtitle">File</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+          <code>
+            &lt;form action="target_component"&gt; <br />
+            &nbsp;&nbsp;Select a file: &lt;input type="file" name="select_file"&gt; <br />
+            &nbsp;&nbsp;&lt;input type="submit" value="Submit" title="This button doesn't work since it doesn't submit the form to anywhere"&gt; <br />
+            &lt;/form&gt;          
+          </code>
+          <br /><br />
+          How does this look like?
+          <blockquote><font size="-1">          
+            <form action="target_component">
+              Select a file: <input type="file" name="select_file"> <br />
+              <input type="submit" value="Submit" title="This button doesn't work since it doesn't submit the form to anywhere">
+            </form>        
+          </font></blockquote>
+        </td></tr></table>            
+      </div>
+
+
+      <div id="section16">
+        <h3 class="subtitle">Client-side redirect</h3>
+        <table class="table table-striped">            
+        <tr><td>        
+          <code>
+            &lt;meta http-equiv="refresh" content="0; url=http://www.usal.edu.lb" /&gt;           
+          </code>
+          <br /><br />
+          To redirect a webpage to another page
+          <ul>
+            <li>Use a <code>meta</code> element 
+                with the <code>http-equiv</code> attribute set to "<code>refresh</code>" value
+            </li>
+            <li>The <code>content</code> attribute specifies the time (in seconds) before the page is redirected and 
+                the destination (the URI that the browser should request)
+            </li> 
+          </ul>  
+        </td></tr></table>            
+      </div>
+      
+      
+      <!-- ############################# -->
+
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/><br/><br/><br/><br/>
+      <br/><br/><br/><br/>        
+    </div>  
+  </div>
+</div>
+
+</body>
+</html>
